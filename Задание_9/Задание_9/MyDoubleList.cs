@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PI_Zad9
+namespace Задание9
 {
     public class MyDoubleList
     {

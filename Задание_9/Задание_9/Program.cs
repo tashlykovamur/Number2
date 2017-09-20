@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PI_Zad9
+namespace Задание9
 {
     class Program
     {
@@ -27,13 +27,17 @@ namespace PI_Zad9
             list.Show();
 
             bool find = list.Find(4);
-            bool res = list.Delete(1);
+            if (find)
+                Console.WriteLine("В списке найден элемент со значением 4");
+            else Console.WriteLine("Элемент со значением 4 не найден");
 
+           bool res = list.Delete(2);
+            if (res)
+                Console.WriteLine("В списке найден элемент со значением 2 и удален");
+            else
+            Console.WriteLine("Элемента со значением 2 нет в списке, значит удалить его нельзя");
             list.Show();
-
-            res = list.Delete(5);
-
-            list.Show();
+           
 
             Console.ReadLine();
         }
